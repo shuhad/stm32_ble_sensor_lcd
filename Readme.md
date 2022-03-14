@@ -7,6 +7,7 @@ Example project on how to setup a STM32 Microcontroller with USB port to run the
   To connect the dongle to the Nucleo board we used a "USB A to Micro USB B"-cable with a USB A female-to-female adapter.)
 - STM32CubeIDE (https://www.st.com/en/development-tools/stm32cubeide.html)
 - Liquid Crystal Display Module – NHD-0420D3Z-NSW-BBW-V3 (https://www.newhavendisplay.com/nhd0420d3znswbbwv3-p-5745.html)
+- HibouAir - Air quality monitoring device (https://www.hibouair.com/)
 
 # 2. How to setup project
 
@@ -40,11 +41,8 @@ Either clone the project, or download it as a zip file and unzip it, into your S
 - Connect the BleuIO Dongle.
 - Wait until the message: "[BleuIO Dongle Ready]" is shown.
 - Press 0 to get device information, 1 to start advertising and 2 to stop advertising. Dongle response will be printed to uart.
+# 4. Web script
+- Open script.js from web script folder in the root directory.
+- Update the BleuIO dongles device id (dongleToConnect) on line 4 that is connected to STM32 board.
+- Run the script using a web bundler (parcel js) by typing parcel index.html
 
-# 4. Links
-
-- [Go to BleuIO Manual][1]
-- [Go to BleuIO Blog][2]
-
-  [1]: https://www.bleuio.com/getting_started/docs/intro/
-  [2]: https://www.bleuio.com/blog/
